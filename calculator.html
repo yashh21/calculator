@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Simple Calculator</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <div class="calculator">
+      <input type="text" id="result" disabled>
+      <table>
+        <tr>
+          <td><button onclick="clearResult()">C</button></td>
+          <td><button onclick="backspace()"><</button></td>
+          <td><button onclick="insert('+')">+</button></td>
+          <td><button onclick="insert('-')">-</button></td>
+        </tr>
+        <tr>
+          <td><button onclick="insert('7')">7</button></td>
+          <td><button onclick="insert('8')">8</button></td>
+          <td><button onclick="insert('9')">9</button></td>
+          <td><button onclick="insert('*')">*</button></td>
+        </tr>
+        <tr>
+          <td><button onclick="insert('4')">4</button></td>
+          <td><button onclick="insert('5')">5</button></td>
+          <td><button onclick="insert('6')">6</button></td>
+          <td><button onclick="insert('/')">/</button></td>
+        </tr>
+        <tr>
+          <td><button onclick="insert('1')">1</button></td>
+          <td><button onclick="insert('2')">2</button></td>
+          <td><button onclick="insert('3')">3</button></td>
+          <td><button onclick="calculate()">=</button></td>
+        </tr>
+      </table>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
